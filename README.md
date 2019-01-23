@@ -1,2 +1,2 @@
 # zoj
-AC过。参考了很多别人的代码，一并感谢。
+Reference to a lot of other people's code, thanks!
