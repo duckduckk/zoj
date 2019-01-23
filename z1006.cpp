@@ -18,7 +18,7 @@ int main()
       
       len=strlen(cipherText);
       
-      for(i=0;i<len;i++)
+      for(i=0;i<len;i++)  //cipherText[]转换成ciperCode[]
       {
          if(cipherText[i]>='a'&&cipherText[i]<='z')
          {
@@ -33,11 +33,11 @@ int main()
              cipherCode[i]=27;
          }
       }
-      for(i=0;i<len;i++)
+      for(i=0;i<len;i++)  //cipherCode[]转换成plainCode[]
       {
          plainCode[(i*k)%len]=(cipherCode[i]+i)%28;  //明文和密文的code数组中保存的是0~27的数字，必须都得保证在0~27之间，所以两条公式(本条公式和题目中的公式)都得对28取余。
       }
-      for(i=0;i<len;i++)
+      for(i=0;i<len;i++)  //plainCode[]转换成plainText[]
       {
          if(plainCode[i]>=1&&plainCode[i]<=26)
          {
@@ -52,7 +52,7 @@ int main()
             plainText[i]='.'; 
          }
       }
-      for(i=0;i<len;i++)
+      for(i=0;i<len;i++)  //输出plainText[]
       {
          printf("%c",plainText[i]); 
       }
