@@ -9,9 +9,9 @@ int main()
 {
    int a,b,p;
    int bottle1,bottle2; 
-   while(scanf("%d%d%d",&a,&b,&p)!=EOF)
+   while(scanf("%d%d%d",&a,&b,&p)!=EOF) //a,b事两个杯子的容量，P是目标容量(b)。
    {  
-      bottle1=0;
+      bottle1=0; //初始状态a和b的动态容量是0
       bottle2=0;
       while(1)
       {
